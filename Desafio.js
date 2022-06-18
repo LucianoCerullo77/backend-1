@@ -1,4 +1,4 @@
-class user {
+class User {
     constructor(name, subname, books, pets) {
         this.name = name;
         this.subname = subname;
@@ -7,6 +7,10 @@ class user {
     }
 }
 
-const user = new user('Luciano', 'Cerullo', ['The Lord of the Rings', 'The Hobbit'], ['Dog', 'Cat']);
+const user = new User('Luciano', 'Cerullo', ['The Lighthouse', 'The Wall', 'Heartless'], ['Fish', 'Cat', 'Bird']);
 
 getFullName = this.name + ' ' + this.subname;
+addPet = this.pets.push('Dog');
+countPets = this.pets.length;
+addBooks = this.books.push('Heartstoppers');
+getBooksNames = this.books.map(book => book);
